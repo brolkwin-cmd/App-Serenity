@@ -12,27 +12,21 @@
 <body>
 
     
-    <header class="header">
-  <nav class="header-nav">
+<header class="encabezado">
+  <nav class="nav-principal">
     <a href="index.html" class="logo" aria-label="SERENITY - Inicio">
-      <span class="logo-mark">◈</span>
-      <span class="logo-name">Serenity</span>
+      <span class="logo-simbolo">◈</span>
+      <span class="logo-nombre">Serenity</span>
     </a>
-    <a href="contacto.html" class="panic-btn" aria-label="Contacto y apoyo de emergencia">
+    <a href="contacto.html" class="boton-panico" aria-label="Contacto y apoyo de emergencia">
       🆘 <span>Necesito ayuda ahora</span>
     </a>
   </nav>
-  
-  <div class="ingreso-bar">
+  <div class="barra-registro">
     <form action="index.html" method="get" aria-label="Registro de sesión">
-      <label class="checkin-label" for="codigo">Registro de sesión:</label>
-      <input
-        type="text" id="codigo" name="codigo"
-        class="checkin-input"
-        placeholder="Código de colaborador"
-        autocomplete="off" maxlength="20"
-      />
-      <select id="area" name="area" class="checkin-select" aria-label="Área o departamento">
+      <label class="etiqueta-registro" for="codigo">Registro de sesión:</label>
+      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" />
+      <select id="area" name="area" class="selector-area" aria-label="Área o departamento">
         <option value="">Área / Departamento</option>
         <option value="ops">Operaciones</option>
         <option value="com">Comercial</option>
@@ -40,9 +34,10 @@
         <option value="rr">Recursos Humanos</option>
         <option value="tec">Tecnología</option>
         <option value="mkt">Marketing</option>
+        <option value="log">Logística</option>
         <option value="otro">Otra área</option>
       </select>
-      <button type="submit" class="checkin-btn">Iniciar sesión →</button>
+      <button type="submit" class="boton-registro">Iniciar sesión →</button>
     </form>
   </div>
 </header>
