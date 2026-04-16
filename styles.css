@@ -28,12 +28,27 @@ html {
 }
 
 body {
-    background-color: #3282C2;
-    color: #1a1a1a;
+body {
+  font-family: var(--fuente);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
+a { color: inherit; }
+button { font-family: var(--fuente); cursor: pointer; }
 
-header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
+
+.fam-tension,   .familia-hero.tension,   .familia-encabezado.tension   { --color-fam: var(--tension);   --fondo-fam: #FADBD8; --borde-fam: #F1948A; }
+.fam-inquietud, .familia-hero.inquietud, .familia-encabezado.inquietud { --color-fam: var(--inquietud); --fondo-fam: #E8DAEF; --borde-fam: #C39BD3; }
+.fam-malestar,  .familia-hero.malestar,  .familia-encabezado.malestar  { --color-fam: var(--malestar);  --fondo-fam: #FDEBD0; --borde-fam: #F0B27A; }
+.fam-confusion, .familia-hero.confusion, .familia-encabezado.confusion { --color-fam: var(--confusion); --fondo-fam: #D6EAF8; --borde-fam: #85C1E9; }
+.fam-bienestar, .familia-hero.bienestar, .familia-encabezado.bienestar { --color-fam: var(--bienestar); --fondo-fam: #FEF9C3; --borde-fam: #F0D060; }
+.fam-desanimo,  .familia-hero.desanimo,  .familia-encabezado.desanimo  { --color-fam: var(--desanimo);  --fondo-fam: #D5F5E3; --borde-fam: #82E0AA; }
+
+
+.titulo-principal,.sentimiento-titulo,.familia-hero-titulo,.herramienta-titulo,.contacto-titulo {
+    font-family: var(--fuente-serif);
+    font-weight: 400;
+}
 }

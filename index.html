@@ -33,8 +33,6 @@
         <option value="fin">Finanzas</option>
         <option value="rr">Recursos Humanos</option>
         <option value="tec">Tecnología</option>
-        <option value="mkt">Marketing</option>
-        <option value="log">Logística</option>
         <option value="otro">Otra área</option>
       </select>
       <button type="submit" class="boton-registro">Iniciar sesión →</button>
@@ -46,7 +44,115 @@
     </header>
 
     <main> 
+ <div class="contenedor">
+    <h1 class="titulo-principal">¿Qué estás sintiendo ahora?</h1>
+    <p class="subtitulo">
+      Elige el sentimiento que mejor describe tu estado.
+      Pasa el cursor para ver una descripción, y haz clic para acceder a las herramientas de afrontamiento.
+    </p>
 
+    <div class="grupo-emociones">
+
+      <div class="familia-bloque">
+        <div class="familia-encabezado tension">
+          <span class="familia-nombre">Tensión</span>
+          <span class="familia-descripcion">Alta energía · desagradable</span>
+        </div>
+        <img src="img/tension.png" alt="Tensión" class="familia-imagen-card" />
+        <div class="pastillas" role="list">
+          <a href="tension.html#frustrado"  class="pastilla tension"  role="listitem" data-tooltip="Algo importante fue bloqueado o no salió como esperabas.">😤 Frustrado</a>
+          <a href="tension.html#irritable"  class="pastilla tension"  role="listitem" data-tooltip="Tu tolerancia está baja y reaccionas más de lo habitual.">😒 Irritable</a>
+          <a href="tension.html#resentido"  class="pastilla tension"  role="listitem" data-tooltip="Guardas una injusticia que no pudiste expresar a tiempo.">😠 Resentido</a>
+          <a href="tension.html#herido"     class="pastilla tension"  role="listitem" data-tooltip="Algo tocó un lugar sensible dentro de ti.">💔 Herido</a>
+          <a href="tension.html#hostil"     class="pastilla tension"  role="listitem" data-tooltip="Sientes el entorno como amenazante y te pones en guardia.">😡 Hostil</a>
+        </div>
+      </div>
+
+      <div class="familia-bloque">
+        <div class="familia-encabezado inquietud">
+          <span class="familia-nombre">Inquietud</span>
+          <span class="familia-descripcion">Alta / baja energía · desagradable</span>
+        </div>
+        <img src="img/inquietud.png" alt="Inquietud" class="familia-imagen-card" />
+        <div class="pastillas" role="list">
+          <a href="inquietud.html#ansioso"    class="pastilla inquietud" role="listitem" data-tooltip="Tu mente anticipa problemas o situaciones negativas que podrían venir.">😰 Ansioso</a>
+          <a href="inquietud.html#inseguro"   class="pastilla inquietud" role="listitem" data-tooltip="Dudas sobre tu propia capacidad o si eres suficiente.">😨 Inseguro</a>
+          <a href="inquietud.html#vulnerable" class="pastilla inquietud" role="listitem" data-tooltip="Te sientes expuesto o sin tu escudo habitual.">🫥 Vulnerable</a>
+          <a href="inquietud.html#abrumado"   class="pastilla inquietud" role="listitem" data-tooltip="La carga actual supera lo que sientes que puedes manejar.">😵 Abrumado</a>
+          <a href="inquietud.html#tenso"      class="pastilla inquietud" role="listitem" data-tooltip="Tu cuerpo y mente están en alerta permanente, rígidos.">😬 Tenso</a>
+        </div>
+      </div>
+
+      <!-- ── MALESTAR ── -->
+      <div class="familia-bloque">
+        <div class="familia-encabezado malestar">
+          <span class="familia-nombre">Malestar</span>
+          <span class="familia-descripcion">Baja energía · desagradable</span>
+        </div>
+        <img src="img/malestar.png" alt="Malestar" class="familia-imagen-card" />
+        <div class="pastillas" role="list">
+          <a href="malestar.html#culpable"     class="pastilla malestar" role="listitem" data-tooltip="Crees que algo que hiciste (o no hiciste) causó daño.">😔 Culpable</a>
+          <a href="malestar.html#avergonzado"  class="pastilla malestar" role="listitem" data-tooltip="Sientes que fuiste expuesto negativamente ante otros.">😳 Avergonzado</a>
+          <a href="malestar.html#decepcionado" class="pastilla malestar" role="listitem" data-tooltip="Lo que ocurrió no cumplió lo que esperabas.">😞 Decepcionado</a>
+          <a href="malestar.html#critico"      class="pastilla malestar" role="listitem" data-tooltip="Algo o alguien no alcanza el estándar que consideras correcto.">🫤 Crítico</a>
+          <a href="malestar.html#distante"     class="pastilla malestar" role="listitem" data-tooltip="Te desconectaste emocionalmente de las personas o el entorno.">🥶 Distante</a>
+        </div>
+      </div>
+
+      <div class="familia-bloque">
+        <div class="familia-encabezado confusion">
+          <span class="familia-nombre">Confusión</span>
+          <span class="familia-descripcion">Energía transitoria · neutra</span>
+        </div>
+        <img src="img/confusion.png" alt="Confusión" class="familia-imagen-card" />
+        <div class="pastillas" role="list">
+          <a href="confusion.html#confundido"   class="pastilla confusion" role="listitem" data-tooltip="No sabes cómo interpretar lo que está pasando.">😕 Confundido</a>
+          <a href="confusion.html#perplejo"     class="pastilla confusion" role="listitem" data-tooltip="Algo rompió por completo tu expectativa o comprensión.">🤔 Perplejo</a>
+          <a href="confusion.html#desorientado" class="pastilla confusion" role="listitem" data-tooltip="Perdiste el marco de referencia para saber cómo actuar.">😶 Desorientado</a>
+          <a href="confusion.html#inquieto"     class="pastilla confusion" role="listitem" data-tooltip="Hay una intranquilidad que no puedes identificar claramente.">😟 Inquieto</a>
+          <a href="confusion.html#descolocado"  class="pastilla confusion" role="listitem" data-tooltip="No sabes bien cómo encajar en este momento o lugar.">🙃 Descolocado</a>
+        </div>
+      </div>
+      <div class="familia-bloque">
+        <div class="familia-encabezado bienestar">
+          <span class="familia-nombre">Bienestar</span>
+          <span class="familia-descripcion">Alta energía · agradable</span>
+        </div>
+        <img src="img/bienestar.png" alt="Bienestar" class="familia-imagen-card" />
+        <div class="pastillas" role="list">
+          <a href="bienestar.html#optimista"  class="pastilla bienestar" role="listitem" data-tooltip="Confías en que lo que viene puede ser bueno o positivo.">😊 Optimista</a>
+          <a href="bienestar.html#orgulloso"  class="pastilla bienestar" role="listitem" data-tooltip="Reconoces un logro propio o ajeno con genuina satisfacción.">🙂 Orgulloso</a>
+          <a href="bienestar.html#motivado"   class="pastilla bienestar" role="listitem" data-tooltip="Tu energía está claramente dirigida hacia algo que te importa.">🚀 Motivado</a>
+          <a href="bienestar.html#agradecido" class="pastilla bienestar" role="listitem" data-tooltip="Reconoces algo valioso que recibiste, esperado o no.">🤗 Agradecido</a>
+          <a href="bienestar.html#tranquilo"  class="pastilla bienestar" role="listitem" data-tooltip="Estás en calma, sin tensión interna ni urgencia.">😌 Tranquilo</a>
+        </div>
+      </div>
+
+      <div class="familia-bloque">
+        <div class="familia-encabezado desanimo">
+          <span class="familia-nombre">Desánimo</span>
+          <span class="familia-descripcion">Baja energía · desagradable</span>
+        </div>
+        <img src="img/desanimo.png" alt="Desánimo" class="familia-imagen-card" />
+        <div class="pastillas" role="list">
+          <a href="desanimo.html#agotado"     class="pastilla desanimo" role="listitem" data-tooltip="Te quedaste sin recursos energéticos para seguir como antes.">🥱 Agotado</a>
+          <a href="desanimo.html#desmotivado" class="pastilla desanimo" role="listitem" data-tooltip="El propósito detrás de lo que haces se siente lejano o ausente.">😶 Desmotivado</a>
+          <a href="desanimo.html#solo"        class="pastilla desanimo" role="listitem" data-tooltip="Necesitas conexión genuina y no la estás encontrando.">🫂 Solo</a>
+          <a href="desanimo.html#vacio"       class="pastilla desanimo" role="listitem" data-tooltip="Hay una ausencia de sentido o de emoción reconocible.">🌑 Vacío</a>
+          <a href="desanimo.html#apagado"     class="pastilla desanimo" role="listitem" data-tooltip="Tu energía y ánimo están en el punto más bajo.">😑 Apagado</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="nota-rueda">
+      Basado en la <span class="resaltado">Rueda de las Emociones de Plutchik</span> ·
+      Sentimientos secundarios agrupados por familia emocional ·
+      <a href="contacto.html" style="color:var(--text-soft);">Contacto y apoyo</a>
+    </p>
+
+
+  </div><!-- /contenedor -->
 
     </main>
 
@@ -86,7 +192,7 @@
   </div>
 
   <div class="pie-inferior">
-    <span>© 2026 SERENITY — Basado en la Rueda de las Emociones de Plutchik (1980)</span>
+    <span> © 2026 SERENITY </span>
   </div>
 </footer>
 
