@@ -1,128 +1,171 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="SERENITY · Videos guiados y datos de neurociencia para el bienestar emocional." />
   <title>SERENITY · Herramientas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-<header class="encabezado">
-  <nav class="nav-principal">
-    <a href="index.html" class="logo"><span class="logo-simbolo">🌿</span><span class="logo-nombre">Serenity</span></a>
-    <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
-    <a href="contacto.html" class="boton-panico">🚨 <span>Necesito ayuda ahora</span></a>
-  </nav>
-  <div class="barra-registro">
-    <form action="index.html" method="get">
-      <label class="etiqueta-registro" for="codigo">Sesión:</label>
-      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" autocomplete="off" maxlength="20" />
-      <select id="area" name="area" class="selector-area">
-        <option value="">Área / Departamento</option>
-        <option value="ops">Operaciones</option><option value="com">Comercial</option>
-        <option value="fin">Finanzas</option><option value="rr">Recursos Humanos</option>
-        <option value="tec">Tecnología</option><option value="mkt">Marketing</option>
-        <option value="log">Logística</option><option value="otro">Otra área</option>
-      </select>
-      <button type="submit" class="boton-registro">Iniciar sesión →</button>
-    </form>
-  </div>
-</header>
+  <header class="encabezado">
+    <nav class="nav-principal">
+      <a href="index.html" class="logo"><span class="logo-simbolo">🌿</span><span
+          class="logo-nombre">Serenity</span></a>
+      <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
+      <a href="contacto.html" class="boton-panico">🚨 <span>Necesito ayuda ahora</span></a>
+    </nav>
+    <div class="barra-registro">
+      <form action="index.html" method="get">
+        <label class="etiqueta-registro" for="codigo">Sesión:</label>
+        <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador"
+          autocomplete="off" maxlength="20" />
+        <select id="area" name="area" class="selector-area">
+          <option value="">Área / Departamento</option>
+          <option value="ops">Operaciones</option>
+          <option value="com">Comercial</option>
+          <option value="fin">Finanzas</option>
+          <option value="rr">Recursos Humanos</option>
+          <option value="tec">Tecnología</option>
+          <option value="mkt">Marketing</option>
+          <option value="log">Logística</option>
+          <option value="otro">Otra área</option>
+        </select>
+        <button type="submit" class="boton-registro">Iniciar sesión →</button>
+      </form>
+    </div>
+  </header>
 
-<main>
-  <div class="contenedor">
-    <h1 class="titulo-principal">Herramientas de Bienestar</h1>
-    <p class="subtitulo">Recursos para comprender y cuidar tu estado emocional. Sin registro, sin historial.</p>
+  <main>
+    <div class="contenedor">
+      <h1 class="titulo-principal">Herramientas de Bienestar</h1>
+      <p class="subtitulo">Recursos para comprender y cuidar tu estado emocional. Sin registro, sin historial.</p>
 
-    <!-- VIDEOS -->
-    <section class="herramienta-seccion" id="videos">
-      <h2 class="herramienta-titulo">🎥 Videos guiados</h2>
-      <p class="herramienta-desc">Ejercicios conducidos para practicar cuando lo necesitas. Activa el sonido y sigue las instrucciones.</p>
-      <div class="videos-grilla">
-        <div class="video-item">
-          <p class="video-label">Respiración 4-7-8 · Relajación profunda</p>
-          <iframe src="https://www.youtube.com/embed/YRPh_GaiL8s" title="Respiración 4-7-8" allowfullscreen loading="lazy"></iframe>
+      <!-- VIDEOS -->
+      <section class="herramienta-seccion" id="videos">
+        <h2 class="herramienta-titulo">🎥 Videos guiados</h2>
+        <p class="herramienta-desc">Ejercicios conducidos para practicar cuando lo necesitas. Activa el sonido y sigue
+          las instrucciones.</p>
+        <div class="videos-grilla">
+          <div class="video-item">
+            <p class="video-label">Respiración 4-7-8 · Relajación profunda</p>
+            <iframe src="https://www.youtube.com/embed/YRPh_GaiL8s" title="Respiración 4-7-8" allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <div class="video-item">
+            <p class="video-label">Meditación guiada · 5 minutos</p>
+            <iframe src="https://www.youtube.com/embed/inpok4MKVLM" title="Meditación 5 minutos" allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <div class="video-item">
+            <p class="video-label">Body scan · Relajación muscular</p>
+            <iframe src="https://www.youtube.com/embed/ClqPtWzosOs" title="Body scan relajación" allowfullscreen
+              loading="lazy"></iframe>
+          </div>
         </div>
-        <div class="video-item">
-          <p class="video-label">Meditación guiada · 5 minutos</p>
-          <iframe src="https://www.youtube.com/embed/inpok4MKVLM" title="Meditación 5 minutos" allowfullscreen loading="lazy"></iframe>
+      </section>
+
+
+      <section class="herramienta-seccion" id="neurodatos">
+        <h2 class="herramienta-titulo">🧠 Lo que la neurociencia dice</h2>
+        <p class="herramienta-desc">Datos reales sobre las emociones y el cerebro que cambian la perspectiva.</p>
+        <div class="neurodatos-grilla">
+          <div class="neurodato-tarjeta">
+            <span class="neurodato-icono">🧠</span>
+            <div>
+              <p class="neurodato-texto">Nombrar lo que sientes reduce su intensidad casi a la mitad. Al etiquetar una
+                emoción, el córtex prefrontal frena la amígdala.</p>
+              <span class="neurodato-fuente">Lieberman et al., UCLA, 2007</span>
+            </div>
+          </div>
+          <div class="neurodato-tarjeta">
+            <span class="neurodato-icono">💧</span>
+            <div>
+              <p class="neurodato-texto">Las lágrimas emocionales contienen cortisol y opioides naturales. Llorar es un
+                mecanismo fisiológico de limpieza del estrés — no una debilidad.</p>
+              <span class="neurodato-fuente">Vingerhoets, Why Only Humans Weep, 2013</span>
+            </div>
+          </div>
+          <div class="neurodato-tarjeta">
+            <span class="neurodato-icono">⚡</span>
+            <div>
+              <p class="neurodato-texto">Tu cerebro detecta el peligro en 1/5 de segundo, antes de ser consciente de
+                ello. La reacción instintiva ocurrió antes de que pudieras pensar.</p>
+              <span class="neurodato-fuente">LeDoux, The Emotional Brain, 1996</span>
+            </div>
+          </div>
+          <div class="neurodato-tarjeta">
+            <span class="neurodato-icono">🧠</span>
+            <div>
+              <p class="neurodato-texto">Exhalar más largo que inhalar activa el nervio vago — el freno natural del
+                sistema nervioso autónomo.</p>
+              <span class="neurodato-fuente">Porges, Polyvagal Theory, 2011</span>
+            </div>
+          </div>
+          <div class="neurodato-tarjeta">
+            <span class="neurodato-icono">💧</span>
+            <div>
+              <p class="neurodato-texto">30 segundos de contacto visual genuino con otra persona libera oxitocina. No
+                necesitas hablar — solo estar presente con intención.</p>
+              <span class="neurodato-fuente">Carter, Attachment and Bonding, 2005</span>
+            </div>
+          </div>
+          <div class="neurodato-tarjeta">
+            <span class="neurodato-icono">💧</span>
+            <div>
+              <p class="neurodato-texto">Practicar gratitud específica 21 días consecutivos reduce el sesgo negativo del
+                cerebro de forma medible.</p>
+              <span class="neurodato-fuente">Emmons & McCullough, Journal of Personality, 2003</span>
+            </div>
+          </div>
+
         </div>
-        <div class="video-item">
-          <p class="video-label">Body scan · Relajación muscular</p>
-          <iframe src="https://www.youtube.com/embed/ClqPtWzosOs" title="Body scan relajación" allowfullscreen loading="lazy"></iframe>
-        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="pie-grilla">
+      <div class="pie-marca">
+        <div><span class="pie-logo-simbolo">🌿</span><span class="pie-logo-texto">Serenity</span></div>
+        <p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p>
       </div>
-    </section>
-
-    <!-- NEUROCIENCIA -->
-    <section class="herramienta-seccion" id="neurodatos">
-      <h2 class="herramienta-titulo">🧠 Lo que la neurociencia dice</h2>
-      <p class="herramienta-desc">Datos reales sobre las emociones y el cerebro que cambian la perspectiva.</p>
-      <div class="neurodatos-grilla">
-        <div class="neurodato-tarjeta">
-          <span class="neurodato-icono">🧠</span>
-          <div>
-            <p class="neurodato-texto">Nombrar lo que sientes reduce su intensidad casi a la mitad. Al etiquetar una emoción, el córtex prefrontal frena la amígdala.</p>
-            <span class="neurodato-fuente">Lieberman et al., UCLA, 2007</span>
-          </div>
-        </div>
-        <div class="neurodato-tarjeta">
-          <span class="neurodato-icono">💧</span>
-          <div>
-            <p class="neurodato-texto">Las lágrimas emocionales contienen cortisol y opioides naturales. Llorar es un mecanismo fisiológico de limpieza del estrés — no una debilidad.</p>
-            <span class="neurodato-fuente">Vingerhoets, Why Only Humans Weep, 2013</span>
-          </div>
-        </div>
-        <div class="neurodato-tarjeta">
-          <span class="neurodato-icono">⚡</span>
-          <div>
-            <p class="neurodato-texto">Tu cerebro detecta el peligro en 1/5 de segundo, antes de ser consciente de ello. La reacción instintiva ocurrió antes de que pudieras pensar.</p>
-            <span class="neurodato-fuente">LeDoux, The Emotional Brain, 1996</span>
-          </div>
-        </div>
-        <div class="neurodato-tarjeta">
-          <span class="neurodato-icono">🧠</span>
-          <div>
-            <p class="neurodato-texto">Exhalar más largo que inhalar activa el nervio vago — el freno natural del sistema nervioso autónomo.</p>
-            <span class="neurodato-fuente">Porges, Polyvagal Theory, 2011</span>
-          </div>
-        </div>
-        <div class="neurodato-tarjeta">
-          <span class="neurodato-icono">💧</span>
-          <div>
-            <p class="neurodato-texto">30 segundos de contacto visual genuino con otra persona libera oxitocina. No necesitas hablar — solo estar presente con intención.</p>
-            <span class="neurodato-fuente">Carter, Attachment and Bonding, 2005</span>
-          </div>
-        </div>
-        <div class="neurodato-tarjeta">
-          <span class="neurodato-icono">💧</span>
-          <div>
-            <p class="neurodato-texto">Practicar gratitud específica 21 días consecutivos reduce el sesgo negativo del cerebro de forma medible.</p>
-            <span class="neurodato-fuente">Emmons & McCullough, Journal of Personality, 2003</span>
-          </div>
-        </div>
-
+      <div>
+        <p class="pie-columna-titulo">Líneas de apoyo · Colombia</p>
+        <ul class="pie-canales">
+          <li><span class="canal-icono">📞</span>
+            <div><a href="tel:106" class="resaltado">Línea 106</a> — Crisis emocional · Bogotá · 24h</div>
+          </li>
+          <li><span class="canal-icono">📞</span>
+            <div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional · 24h</div>
+          </li>
+          <li><span class="canal-icono">✉️</span>
+            <div><a href="contacto.html">Ver todas las líneas</a></div>
+          </li>
+        </ul>
       </div>
-    </section>
-
-  </div>
-</main>
-
-<footer class="pie">
-  <div class="pie-grilla">
-    <div class="pie-marca"><div><span class="pie-logo-simbolo">🌿</span><span class="pie-logo-texto">Serenity</span></div><p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p></div>
-    <div><p class="pie-columna-titulo">Líneas de apoyo · Colombia</p><ul class="pie-canales"><li><span class="canal-icono">📞</span><div><a href="tel:106" class="resaltado">Línea 106</a> — Crisis emocional · Bogotá · 24h</div></li><li><span class="canal-icono">📞</span><div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional · 24h</div></li><li><span class="canal-icono">✉️</span><div><a href="contacto.html">Ver todas las líneas</a></div></li></ul></div>
-    <div><p class="pie-columna-titulo">Contacto interno</p><ul class="pie-canales"><li><span class="canal-icono">✉️</span><div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div></li></ul></div>
-  </div>
-  <div class="pie-inferior"><span>© 2026 SERENITY — Bienestar Emocional Corporativo</span><span><a href="contacto.html" style="color:#AEB6BF;text-decoration:none;">Contacto y Apoyo</a></span></div>
-</footer>
+      <div>
+        <p class="pie-columna-titulo">Contacto interno</p>
+        <ul class="pie-canales">
+          <li><span class="canal-icono">✉️</span>
+            <div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie-inferior"><span>© 2026 SERENITY — Bienestar Emocional Corporativo</span><span><a
+          href="contacto.html" style="color:#AEB6BF;text-decoration:none;">Contacto y Apoyo</a></span></div>
+  </footer>
 
 </body>
+
 </html>
-
-
-
-

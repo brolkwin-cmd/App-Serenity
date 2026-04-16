@@ -160,6 +160,8 @@ button { font-family: var(--fuente); cursor: pointer; }
     font-size: 0.75rem;
     color: #717D7E;
 }
+.pie-enlace-discreto { color: #AEB6BF; text-decoration: none; transition: color 0.15s; }
+.pie-enlace-discreto:hover { color: #ECF0F1; }
 .grupo-emociones { display: flex; flex-direction: column; gap: 14px; }
 .familia-bloque {
     border: 1px solid var(--border);
