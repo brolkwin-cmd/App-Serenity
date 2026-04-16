@@ -147,7 +147,8 @@ button { font-family: var(--fuente); cursor: pointer; }
 .canal-icono { flex-shrink: 0; }
 .pie-canales a { color: #AEB6BF; text-decoration: none; }
 .pie-canales a:hover { color: #ECF0F1; }
-.pie-canales strong { display: block; color: #BDC3C7; font-weight: 500; }
+.pie-canales strong, .pie-canales .resaltado { display: block; color: #BDC3C7; font-weight: 500; }
+.pie-canales a.resaltado:hover { color: #ECF0F1; }
 .pie-inferior {
     max-width: 860px;
     margin: 0 auto;
