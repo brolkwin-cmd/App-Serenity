@@ -262,6 +262,8 @@ button { font-family: var(--fuente); cursor: pointer; }
 .tecnica-caja { border-left: 3px solid var(--color-fam, var(--border)); padding: 10px 14px; margin: 10px 0; }
 .tecnica-nombre { display: block; font-size: 0.89rem; font-weight: 600; margin-bottom: 8px; color: var(--color-fam, var(--text)); }
 .tecnica-pasos { padding-left: 18px; font-size: 0.84rem; color: var(--text-soft); line-height: 1.8; }
+.tecnica-nota { font-size: 0.84rem; color: var(--text-muted); font-style: italic; margin-top: 14px; line-height: 1.6; }
+.mensaje-normalizador { font-size: 1.05rem; font-family: var(--fuente-serif); color: var(--color-fam, var(--text)); text-align: center; font-style: italic; padding: 14px 10px; opacity: 0.85; line-height: 1.5; }
 .familia-hero {
     padding: 26px 20px;
     border-bottom: 1px solid var(--border);
