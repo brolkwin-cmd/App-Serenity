@@ -1,94 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERENITY</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SERENITY · Familia Desánimo: Agotado, Desmotivado, Solo, Vacío, Apagado." />
+  <title>SERENITY · Desánimo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-    
 <header class="encabezado">
   <nav class="nav-principal">
-    <a href="index.html" class="logo" aria-label="SERENITY - Inicio">
-      <span class="logo-simbolo">◈</span>
-      <span class="logo-nombre">Serenity</span>
-    </a>
-    <a href="contacto.html" class="boton-panico" aria-label="Contacto y apoyo de emergencia">
-      🆘 <span>Necesito ayuda ahora</span>
-    </a>
+    <a href="index.html" class="logo"><span class="logo-simbolo">◈</span><span class="logo-nombre">Serenity</span></a>
+    <a href="index.html" class="nav-enlace">← Inicio</a>
+    <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
+    <a href="contacto.html" class="boton-panico">🆘 <span>Necesito ayuda ahora</span></a>
   </nav>
   <div class="barra-registro">
-    <form action="index.html" method="get" aria-label="Registro de sesión">
-      <label class="etiqueta-registro" for="codigo">Registro de sesión:</label>
-      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" />
-      <select id="area" name="area" class="selector-area" aria-label="Área o departamento">
+    <form action="index.html" method="get">
+      <label class="etiqueta-registro" for="codigo">Sesión:</label>
+      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" autocomplete="off" maxlength="20" />
+      <select id="area" name="area" class="selector-area">
         <option value="">Área / Departamento</option>
-        <option value="ops">Operaciones</option>
-        <option value="com">Comercial</option>
-        <option value="fin">Finanzas</option>
-        <option value="rr">Recursos Humanos</option>
-        <option value="tec">Tecnología</option>
-        <option value="otro">Otra área</option>
+        <option value="ops">Operaciones</option><option value="com">Comercial</option>
+        <option value="fin">Finanzas</option><option value="rr">Recursos Humanos</option>
+        <option value="tec">Tecnología</option><option value="mkt">Marketing</option>
+        <option value="log">Logística</option><option value="otro">Otra área</option>
       </select>
-      <button type="submit" class="boton-registro">Iniciar sesión →</button>
+      <button type="submit" class="boton-registro">Iniciar →</button>
     </form>
   </div>
 </header>
 
+<div class="familia-hero desanimo">
+  <div class="familia-hero-contenido"><div class="familia-hero-texto">
+    <h1 class="familia-hero-titulo">Desánimo</h1>
+    <p class="familia-hero-descripcion">Baja energía · Desagradable · Tu reserva está baja y necesitas atención</p>
+    <p style="font-size:0.82rem; margin-bottom:12px; color: var(--desanimo);">
+      Si lo que sientes es muy intenso o persistente, el
+      <a href="contacto.html" style="color:inherit; font-weight:600;">botón de apoyo</a> está siempre disponible.
+    </p>
+    <nav class="familia-navegacion" aria-label="Ir a sentimiento">
+      <a href="#agotado"     class="pastilla-nav desanimo">🥱 Agotado</a>
+      <a href="#desmotivado" class="pastilla-nav desanimo">😶 Desmotivado</a>
+      <a href="#solo"        class="pastilla-nav desanimo">🫂 Solo</a>
+      <a href="#vacio"       class="pastilla-nav desanimo">🌑 Vacío</a>
+      <a href="#apagado"     class="pastilla-nav desanimo">😑 Apagado</a>
+    </nav>
+  </div>
+</div>
 
-    </header>
+<main class="familia-contenido">
 
-    <main> 
+  <!-- ── AGOTADO ── -->
+  <section id="agotado" class="sentimiento-seccion fam-desanimo">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🥱</span>
+      <div><h2 class="sentimiento-titulo">Agotado</h2><p class="sentimiento-frase">Te quedaste sin recursos energéticos para seguir como antes</p><span class="familia-etiqueta">Familia: Desánimo</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">El agotamiento es la señal más clara de que el <span class="resaltado">balance entre demanda y recuperación se ha roto</span>. No es pereza ni debilidad — es fisiología. Continuar sin atenderlo aumenta el riesgo de burnout clínico.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Recuperación mínima efectiva</span><ol class="tecnica-pasos"><li>Date permiso real de parar. No 5 minutos — el tiempo que genuinamente necesitas.</li><li>Prioriza: <span class="resaltado">¿Qué de mi lista puede esperar o delegarse hoy?</span></li><li>Si el agotamiento persiste más de 2 semanas, habla con un profesional de salud.</li></ol></div>
+      <p class="tecnica-nota">El descanso no es una recompensa al final del trabajo. Es parte del proceso que hace posible el trabajo de calidad.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"El descanso no es una recompensa.<br>Es parte del trabajo."</p></div>
 
+  </section>
 
-    </main>
+  <!-- ── DESMOTIVADO ── -->
+  <section id="desmotivado" class="sentimiento-seccion fam-desanimo">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😶</span>
+      <div><h2 class="sentimiento-titulo">Desmotivado</h2><p class="sentimiento-frase">El propósito detrás de lo que haces se siente lejano o ausente</p><span class="familia-etiqueta">Familia: Desánimo</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La desmotivación señala una <span class="resaltado">desconexión entre las acciones y el propósito</span>. Frecuentemente indica que algo no está siendo satisfecho: autonomía, crecimiento o vínculos significativos en el trabajo.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Reconexión con el para qué</span><ol class="tecnica-pasos"><li>Escribe: <span class="resaltado">¿Para qué hago lo que hago?</span> (No el 'qué' — el 'para qué').</li><li>¿Hay algo en mi trabajo actual que aún encuentre con algún significado?</li><li>¿Qué necesitaría cambiar para sentirme un 10% diferente esta semana?</li></ol></div>
+      <p class="tecnica-nota">La motivación intrínseca depende de autonomía, competencia y relación. Identificar cuál falta da dirección concreta al cambio.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La desmotivación no es el final.<br>Es una pregunta que espera respuesta."</p></div>
 
- 
+  </section>
+
+  <!-- ── SOLO ── -->
+  <section id="solo" class="sentimiento-seccion fam-desanimo">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🫂</span>
+      <div><h2 class="sentimiento-titulo">Solo</h2><p class="sentimiento-frase">Necesitas conexión genuina y no la estás encontrando</p><span class="familia-etiqueta">Familia: Desánimo</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La soledad es una señal biológica tan real como el hambre: el sistema nervioso señala que <span class="resaltado">la necesidad de conexión no está cubierta</span>. Puede ocurrir incluso rodeado de personas.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Un gesto de conexión pequeño</span><ol class="tecnica-pasos"><li>Piensa en <span class="resaltado">1 persona</span> con quien te sentirías bien hablando hoy, aunque sea brevemente.</li><li>Escríbele un mensaje corto, sin presión de que la conversación sea larga.</li><li>Si no hay nadie ahora, abrirse a un profesional también es un acto de conexión.</li></ol></div>
+      <p class="tecnica-nota">La soledad se retroalimenta con el aislamiento. Un gesto mínimo de contacto interrumpe ese ciclo.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Sentirse solo no significa que estés solo.<br>Significa que la conexión es posible."</p></div>
+
+  </section>
+
+  <!-- ── VACÍO ── -->
+  <section id="vacio" class="sentimiento-seccion fam-desanimo">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🌑</span>
+      <div><h2 class="sentimiento-titulo">Vacío</h2><p class="sentimiento-frase">Hay una ausencia de sentido o de emoción reconocible</p><span class="familia-etiqueta">Familia: Desánimo</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">El vacío emocional puede ser una <span class="resaltado">respuesta de protección</span> tras saturación prolongada, o puede señalar algo más profundo que merece atención. Si persiste más de 2 semanas, no lo ignores.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Pequeña activación sensorial</span><ol class="tecnica-pasos"><li>Busca un estímulo simple y agradable: música, luz natural, un paseo breve.</li><li>No exijas sentir mucho. Nota cualquier reacción, por pequeña que sea.</li><li>Si el vacío persiste, habla con alguien de confianza o un <a href="contacto.html">profesional disponible</a>.</li></ol></div>
+      <p class="tecnica-nota">Los estímulos sensoriales son la entrada más directa al sistema emocional cuando las palabras no alcanzan.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"El vacío también es una señal.<br>Y también merece atención."</p></div>
+
+  </section>
+
+  <!-- ── APAGADO ── -->
+  <section id="apagado" class="sentimiento-seccion fam-desanimo">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😑</span>
+      <div><h2 class="sentimiento-titulo">Apagado</h2><p class="sentimiento-frase">Tu energía y ánimo están en el punto más bajo</p><span class="familia-etiqueta">Familia: Desánimo</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">Sentirse apagado es diferente a la tristeza activa: no duele con intensidad — todo parece lejano. Puede señalar <span class="resaltado">agotamiento profundo o el inicio de un cuadro depresivo</span>. Necesita ser atendido, no ignorado.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Auto-compasión activa (Kristin Neff, 2003)</span><ol class="tecnica-pasos"><li>Pon una mano sobre tu pecho. Siente el calor de tu propia mano.</li><li>Dite suavemente: <span class="resaltado">"Es normal sentirse así. No estoy solo/a en esto."</span></li><li>Pregunta: <span class="resaltado">¿Qué necesito ahora mismo?</span> Date permiso de tenerlo.</li></ol></div>
+      <p class="tecnica-nota">Si esto persiste más de 2 semanas o interfiere con tu vida, hablar con un profesional de salud mental no es debilidad — es inteligencia emocional en acción.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Estar apagado no significa estar roto.<br>Significa que necesitas luz — y puedes encontrarla."</p></div>
+    <a href="contacto.html" class="btn-volver" style="margin-right:10px; border-color:#1E8449; color:#1E8449;">🆘 Solicitar apoyo</a>
+
+  </section>
+
+</main>
+
 <footer class="pie">
   <div class="pie-grilla">
-
-    <div class="pie-marca">
-      <div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div>
-      <p>
-        Plataforma de bienestar emocional corporativo.<br>
-        Tus respuestas son anónimas y privadas.<br>
-        Nunca se comparten sin tu consentimiento.
-      </p>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Líneas de apoyo · Colombia</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 106</span><a href="tel:106">106</a> — Crisis emocional · Bogotá · 24h</div></li>
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 192 op. 4</span><a href="tel:192">192</a> — Salud mental · Nacional</div></li>
-        <li><span class="canal-icono">🚨</span><div><span class="resaltado">Emergencias 123</span><a href="tel:123">123</a> — Nacional · 24h</div></li>
-        <li><span class="canal-icono">💬</span><div><span class="resaltado">WhatsApp Línea 106</span><a href="https://wa.me/573007548933" target="_blank">300 754 8933</a></div></li>
-        <li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Contacto interno</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📧</span><div><span class="resaltado">Bienestar</span><a href="mailto:bienestar@empresa.com">bienestar@empresa.com</a></div></li>
-        <li><span class="canal-icono">👤</span><div><span class="resaltado">RRHH</span><a href="mailto:rrhh@empresa.com">rrhh@empresa.com</a></div></li>
-        <li><span class="canal-icono">🏥</span><div><span class="resaltado">Interno</span><a href="tel:3500">Ext. 3500</a> — Lun–Vie 7am–6pm</div></li>
-      </ul>
-    </div>
-
+    <div class="pie-marca"><div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div><p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p></div>
+    <div><p class="pie-columna-titulo">Líneas de apoyo</p><ul class="pie-canales"><li><span class="canal-icono">📞</span><div><a href="tel:106" class="resaltado">Línea 106</a> — Bogotá · 24h</div></li><li><span class="canal-icono">🚨</span><div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional</div></li><li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li></ul></div>
+    <div><p class="pie-columna-titulo">Contacto</p><ul class="pie-canales"><li><span class="canal-icono">📧</span><div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div></li></ul></div>
   </div>
-
-  <div class="pie-inferior">
-    <span> © 2026 SERENITY </span>
-  </div>
+  <div class="pie-inferior"><span>© 2026 SERENITY</span><span><a href="contacto.html" style="color:#AEB6BF; text-decoration:none;">Contacto y Apoyo</a></span></div>
 </footer>
 
-
 </body>
-
 </html>

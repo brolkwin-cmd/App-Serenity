@@ -1,93 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERENITY</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SERENITY · Familia Malestar: Culpable, Avergonzado, Decepcionado, Crítico, Distante." />
+  <title>SERENITY · Malestar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-    
 <header class="encabezado">
   <nav class="nav-principal">
-    <a href="index.html" class="logo" aria-label="SERENITY - Inicio">
-      <span class="logo-simbolo">◈</span>
-      <span class="logo-nombre">Serenity</span>
-    </a>
-    <a href="contacto.html" class="boton-panico" aria-label="Contacto y apoyo de emergencia">
-      🆘 <span>Necesito ayuda ahora</span>
-    </a>
+    <a href="index.html" class="logo"><span class="logo-simbolo">◈</span><span class="logo-nombre">Serenity</span></a>
+    <a href="index.html" class="nav-enlace">← Inicio</a>
+    <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
+    <a href="contacto.html" class="boton-panico">🆘 <span>Necesito ayuda ahora</span></a>
   </nav>
   <div class="barra-registro">
-    <form action="index.html" method="get" aria-label="Registro de sesión">
-      <label class="etiqueta-registro" for="codigo">Registro de sesión:</label>
-      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" />
-      <select id="area" name="area" class="selector-area" aria-label="Área o departamento">
+    <form action="index.html" method="get">
+      <label class="etiqueta-registro" for="codigo">Sesión:</label>
+      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" autocomplete="off" maxlength="20" />
+      <select id="area" name="area" class="selector-area">
         <option value="">Área / Departamento</option>
-        <option value="ops">Operaciones</option>
-        <option value="com">Comercial</option>
-        <option value="fin">Finanzas</option>
-        <option value="rr">Recursos Humanos</option>
-        <option value="tec">Tecnología</option>
-        <option value="otro">Otra área</option>
+        <option value="ops">Operaciones</option><option value="com">Comercial</option>
+        <option value="fin">Finanzas</option><option value="rr">Recursos Humanos</option>
+        <option value="tec">Tecnología</option><option value="mkt">Marketing</option>
+        <option value="log">Logística</option><option value="otro">Otra área</option>
       </select>
-      <button type="submit" class="boton-registro">Iniciar sesión →</button>
+      <button type="submit" class="boton-registro">Iniciar →</button>
     </form>
   </div>
 </header>
 
+<div class="familia-hero malestar">
+  <div class="familia-hero-contenido"><div class="familia-hero-texto">
+    <h1 class="familia-hero-titulo">Malestar</h1>
+    <p class="familia-hero-descripcion">Baja energía · Desagradable · Algo en ti no está alineado con tus valores</p>
+    <nav class="familia-navegacion" aria-label="Ir a sentimiento">
+      <a href="#culpable"     class="pastilla-nav malestar">😔 Culpable</a>
+      <a href="#avergonzado"  class="pastilla-nav malestar">😳 Avergonzado</a>
+      <a href="#decepcionado" class="pastilla-nav malestar">😞 Decepcionado</a>
+      <a href="#critico"      class="pastilla-nav malestar">🫤 Crítico</a>
+      <a href="#distante"     class="pastilla-nav malestar">🥶 Distante</a>
+    </nav>
+  </div>
+</div>
 
-    </header>
+<main class="familia-contenido">
 
-    <main> 
+  <!-- ── CULPABLE ── -->
+  <section id="culpable" class="sentimiento-seccion fam-malestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😔</span>
+      <div><h2 class="sentimiento-titulo">Culpable</h2><p class="sentimiento-frase">Crees que algo que hiciste (o no hiciste) causó daño</p><span class="familia-etiqueta">Familia: Malestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La culpa sana señala que <span class="resaltado">tus valores están activos</span>: algo que ocurrió no está alineado con quién quieres ser. A diferencia de la vergüenza, la culpa dice "hice algo que no quería hacer" — y eso tiene solución.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Las 3 R de la reparación</span><ol class="tecnica-pasos"><li><span class="resaltado">Reconoce</span> lo que ocurrió, sin minimizar ni dramatizar.</li><li><span class="resaltado">Repara</span> si es posible: disculpa o acción concreta.</li><li><span class="resaltado">Redirige</span>: ¿Qué harás diferente la próxima vez?</li></ol></div>
+      <p class="tecnica-nota">La culpa útil lleva a la acción. Si ya hiciste lo que podías, seguir cargándola no tiene propósito.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Sentir culpa significa que te importa.<br>Actuar a partir de ella es lo que cambia las cosas."</p></div>
 
+  </section>
 
-    </main>
+  <!-- ── AVERGONZADO ── -->
+  <section id="avergonzado" class="sentimiento-seccion fam-malestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😳</span>
+      <div><h2 class="sentimiento-titulo">Avergonzado</h2><p class="sentimiento-frase">Sientes que fuiste expuesto negativamente ante otros</p><span class="familia-etiqueta">Familia: Malestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La vergüenza es la emoción más social: existe porque nos importa cómo nos perciben. <span class="resaltado">No es una evaluación objetiva de tu valor</span> — es una señal de que temes el rechazo del grupo.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Perspectiva temporal</span><ol class="tecnica-pasos"><li>Pregunta: <span class="resaltado">¿Este momento seguirá importando en 1 semana? ¿En 6 meses?</span></li><li>¿Qué le dirías a un amigo que sintiera exactamente lo que tú sientes?</li><li>Dítelo a ti mismo, con la misma amabilidad.</li></ol></div>
+      <p class="tecnica-nota">La vergüenza vive en el aislamiento y se disuelve en la perspectiva. Nombrarla ya reduce su intensidad.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La vergüenza vive en el silencio.<br>Nombrarla ya es la mitad del camino."</p></div>
+
+  </section>
+
+  <!-- ── DECEPCIONADO ── -->
+  <section id="decepcionado" class="sentimiento-seccion fam-malestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😞</span>
+      <div><h2 class="sentimiento-titulo">Decepcionado</h2><p class="sentimiento-frase">Lo que ocurrió no cumplió lo que esperabas</p><span class="familia-etiqueta">Familia: Malestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La decepción surge cuando la brecha entre <span class="resaltado">lo que esperabas y lo que ocurrió</span> es significativa. No es señal de que esperabas demasiado — es señal de que invertiste genuinamente.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Revisión de expectativas</span><ol class="tecnica-pasos"><li>Escribe: <span class="resaltado">¿Qué esperaba exactamente que ocurriera?</span></li><li>¿Esa expectativa fue comunicada, o era tácita?</li><li>¿Qué aprendo de esto para la próxima vez?</li></ol></div>
+      <p class="tecnica-nota">Muchas decepciones vienen de expectativas no negociadas. Identificarlas reduce su probabilidad de repetirse.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Decepcionarse es el precio de esperar algo.<br>Y esperar algo siempre vale la pena."</p></div>
+
+  </section>
+
+  <!-- ── CRÍTICO ── -->
+  <section id="critico" class="sentimiento-seccion fam-malestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🫤</span>
+      <div><h2 class="sentimiento-titulo">Crítico</h2><p class="sentimiento-frase">Algo o alguien no alcanza el estándar que consideras correcto</p><span class="familia-etiqueta">Familia: Malestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La actitud crítica puede nacer de <span class="resaltado">estándares elevados y genuinos</span>, pero cuando se vuelve automática desgasta sin construir. La pregunta clave: ¿estoy siendo exigente o estoy siendo injusto?</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Escritura expresiva de 5 minutos</span><ol class="tecnica-pasos"><li>Escribe sin censura sobre lo que no cumple tu estándar.</li><li><span class="resaltado">¿Qué valor mío está siendo afectado?</span> (honestidad, respeto, calidad…)</li><li><span class="resaltado">¿Hay una acción constructiva posible, o solo hay juicio?</span></li></ol></div>
+      <p class="tecnica-nota">La crítica que no lleva a una acción posible es simplemente rumiación. Identificar qué puedes hacer la convierte en algo útil.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La crítica protege lo que valoras.<br>Escucha qué te está diciendo."</p></div>
+
+  </section>
+
+  <!-- ── DISTANTE ── -->
+  <section id="distante" class="sentimiento-seccion fam-malestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🥶</span>
+      <div><h2 class="sentimiento-titulo">Distante</h2><p class="sentimiento-frase">Te desconectaste emocionalmente de las personas o el entorno</p><span class="familia-etiqueta">Familia: Malestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">El distanciamiento emocional es con frecuencia un <span class="resaltado">mecanismo de protección</span>: el sistema nervioso cierra la conexión para evitar más dolor. No es indiferencia real — es una defensa.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Reconexión sensorial mínima</span><ol class="tecnica-pasos"><li>Pon música que normalmente te mueva. Solo escúchala, sin otra tarea.</li><li>Prepara algo caliente: té, café. Nota la temperatura en tus manos.</li><li>Pregunta: <span class="resaltado">¿Hay alguien con quien quiera hablar hoy?</span></li></ol></div>
+      <p class="tecnica-nota">El distanciamiento se rompe de a poco. Un gesto mínimo de contacto interrumpe el ciclo.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"El distanciamiento no es frialdad.<br>Es un escudo que puedes bajar cuando estés listo."</p></div>
+
+  </section>
+
+</main>
 
 <footer class="pie">
   <div class="pie-grilla">
-
-    <div class="pie-marca">
-      <div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div>
-      <p>
-        Plataforma de bienestar emocional corporativo.<br>
-        Tus respuestas son anónimas y privadas.<br>
-        Nunca se comparten sin tu consentimiento.
-      </p>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Líneas de apoyo · Colombia</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 106</span><a href="tel:106">106</a> — Crisis emocional · Bogotá · 24h</div></li>
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 192 op. 4</span><a href="tel:192">192</a> — Salud mental · Nacional</div></li>
-        <li><span class="canal-icono">🚨</span><div><span class="resaltado">Emergencias 123</span><a href="tel:123">123</a> — Nacional · 24h</div></li>
-        <li><span class="canal-icono">💬</span><div><span class="resaltado">WhatsApp Línea 106</span><a href="https://wa.me/573007548933" target="_blank">300 754 8933</a></div></li>
-        <li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Contacto interno</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📧</span><div><span class="resaltado">Bienestar</span><a href="mailto:bienestar@empresa.com">bienestar@empresa.com</a></div></li>
-        <li><span class="canal-icono">👤</span><div><span class="resaltado">RRHH</span><a href="mailto:rrhh@empresa.com">rrhh@empresa.com</a></div></li>
-        <li><span class="canal-icono">🏥</span><div><span class="resaltado">Interno</span><a href="tel:3500">Ext. 3500</a> — Lun–Vie 7am–6pm</div></li>
-      </ul>
-    </div>
-
+    <div class="pie-marca"><div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div><p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p></div>
+    <div><p class="pie-columna-titulo">Líneas de apoyo</p><ul class="pie-canales"><li><span class="canal-icono">📞</span><div><a href="tel:106" class="resaltado">Línea 106</a> — Bogotá · 24h</div></li><li><span class="canal-icono">🚨</span><div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional</div></li><li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li></ul></div>
+    <div><p class="pie-columna-titulo">Contacto</p><ul class="pie-canales"><li><span class="canal-icono">📧</span><div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div></li></ul></div>
   </div>
-
-  <div class="pie-inferior">
-    <span> © 2026 SERENITY </span>
-  </div>
+  <div class="pie-inferior"><span>© 2026 SERENITY</span><span><a href="contacto.html" style="color:#AEB6BF; text-decoration:none;">Contacto y Apoyo</a></span></div>
 </footer>
 
-
 </body>
-
 </html>

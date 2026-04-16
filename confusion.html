@@ -1,94 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERENITY</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SERENITY · Familia Confusión: Confundido, Perplejo, Desorientado, Inquieto, Descolocado." />
+  <title>SERENITY · Confusión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-    
 <header class="encabezado">
   <nav class="nav-principal">
-    <a href="index.html" class="logo" aria-label="SERENITY - Inicio">
-      <span class="logo-simbolo">◈</span>
-      <span class="logo-nombre">Serenity</span>
-    </a>
-    <a href="contacto.html" class="boton-panico" aria-label="Contacto y apoyo de emergencia">
-      🆘 <span>Necesito ayuda ahora</span>
-    </a>
+    <a href="index.html" class="logo"><span class="logo-simbolo">◈</span><span class="logo-nombre">Serenity</span></a>
+    <a href="index.html" class="nav-enlace">← Inicio</a>
+    <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
+    <a href="contacto.html" class="boton-panico">🆘 <span>Necesito ayuda ahora</span></a>
   </nav>
   <div class="barra-registro">
-    <form action="index.html" method="get" aria-label="Registro de sesión">
-      <label class="etiqueta-registro" for="codigo">Registro de sesión:</label>
-      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" />
-      <select id="area" name="area" class="selector-area" aria-label="Área o departamento">
+    <form action="index.html" method="get">
+      <label class="etiqueta-registro" for="codigo">Sesión:</label>
+      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" autocomplete="off" maxlength="20" />
+      <select id="area" name="area" class="selector-area">
         <option value="">Área / Departamento</option>
-        <option value="ops">Operaciones</option>
-        <option value="com">Comercial</option>
-        <option value="fin">Finanzas</option>
-        <option value="rr">Recursos Humanos</option>
-        <option value="tec">Tecnología</option>
-        <option value="otro">Otra área</option>
+        <option value="ops">Operaciones</option><option value="com">Comercial</option>
+        <option value="fin">Finanzas</option><option value="rr">Recursos Humanos</option>
+        <option value="tec">Tecnología</option><option value="mkt">Marketing</option>
+        <option value="log">Logística</option><option value="otro">Otra área</option>
       </select>
-      <button type="submit" class="boton-registro">Iniciar sesión →</button>
+      <button type="submit" class="boton-registro">Iniciar →</button>
     </form>
   </div>
 </header>
 
+<div class="familia-hero confusion">
+  <div class="familia-hero-contenido"><div class="familia-hero-texto">
+    <h1 class="familia-hero-titulo">Confusión</h1>
+    <p class="familia-hero-descripcion">Energía transitoria · Neutra · No tienes claro qué está pasando o cómo actuar</p>
+    <nav class="familia-navegacion" aria-label="Ir a sentimiento">
+      <a href="#confundido"   class="pastilla-nav confusion">😕 Confundido</a>
+      <a href="#perplejo"     class="pastilla-nav confusion">🤔 Perplejo</a>
+      <a href="#desorientado" class="pastilla-nav confusion">😶 Desorientado</a>
+      <a href="#inquieto"     class="pastilla-nav confusion">😟 Inquieto</a>
+      <a href="#descolocado"  class="pastilla-nav confusion">🙃 Descolocado</a>
+    </nav>
+  </div>
+</div>
 
-    </header>
+<main class="familia-contenido">
 
-    <main> 
+  <!-- ── CONFUNDIDO ── -->
+  <section id="confundido" class="sentimiento-seccion fam-confusion">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😕</span>
+      <div><h2 class="sentimiento-titulo">Confundido</h2><p class="sentimiento-frase">No sabes cómo interpretar lo que está pasando</p><span class="familia-etiqueta">Familia: Confusión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La confusión aparece cuando la información disponible no permite formar un mapa claro. Es <span class="resaltado">necesaria para el aprendizaje</span>: sin ella, no hay actualización cognitiva. El problema surge cuando persiste demasiado tiempo sin resolverse.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Pausa consciente de 3 respiraciones</span><ol class="tecnica-pasos"><li>Da un paso atrás. <span class="resaltado">No respondas aún.</span></li><li>Toma <span class="resaltado">3 respiraciones lentas</span> observando qué emoción sigue a la confusión.</li><li>Pregunta: <span class="resaltado">¿Necesito actuar ahora o puedo esperar?</span></li></ol></div>
+      <p class="tecnica-nota">La mayoría de decisiones impulsivas ocurren en el lapso de confusión. Una pausa deliberada reduce los errores de respuesta.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"No tienes que entender todo ahora mismo.<br>Date el tiempo que necesitas."</p></div>
 
+  </section>
 
-    </main>
+  <!-- ── PERPLEJO ── -->
+  <section id="perplejo" class="sentimiento-seccion fam-confusion">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🤔</span>
+      <div><h2 class="sentimiento-titulo">Perplejo</h2><p class="sentimiento-frase">Algo rompió por completo tu expectativa o comprensión</p><span class="familia-etiqueta">Familia: Confusión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La perplejidad ocurre cuando algo rompe radicalmente nuestra comprensión habitual. La <span class="resaltado">discrepancia es mayor</span> que en la confusión simple. Antes de reaccionar, hay que entender bien qué exactamente ocurrió.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Esclarecimiento activo</span><ol class="tecnica-pasos"><li>Escribe en <span class="resaltado">una sola frase</span> qué te desconcertó exactamente.</li><li>¿Tienes toda la información o faltan datos clave?</li><li>¿Hay alguien que pueda darte más contexto sobre lo que ocurrió?</li></ol></div>
+      <p class="tecnica-nota">Muchas perplejidades se resuelven con más información, no con más reflexión sobre los mismos datos.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"No entender algo no dice nada de tu inteligencia.<br>Dice que te encontraste con algo nuevo."</p></div>
 
- 
+  </section>
+
+  <!-- ── DESORIENTADO ── -->
+  <section id="desorientado" class="sentimiento-seccion fam-confusion">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😶</span>
+      <div><h2 class="sentimiento-titulo">Desorientado</h2><p class="sentimiento-frase">Perdiste el marco de referencia para saber cómo actuar</p><span class="familia-etiqueta">Familia: Confusión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La desorientación aparece cuando el contexto cambia rápidamente o falta información clave para actuar. Es especialmente intensa en <span class="resaltado">entornos de alta incertidumbre</span>. Necesita anclaje en algo concreto.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Anclaje en lo concreto</span><ol class="tecnica-pasos"><li>Nombra <span class="resaltado">3 cosas que siguen siendo ciertas y estables</span> ahora mismo.</li><li>¿Cuál es la próxima acción más pequeña que puedo tomar?</li><li>Hazla. La acción, aunque mínima, reconstruye el sentido de orientación.</li></ol></div>
+      <p class="tecnica-nota">La desorientación se alimenta de la inacción. El movimiento mínimo activa el sistema de orientación del cerebro.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Estar perdido es el punto de partida<br>de encontrar el camino."</p></div>
+
+  </section>
+
+  <!-- ── INQUIETO ── -->
+  <section id="inquieto" class="sentimiento-seccion fam-confusion">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😟</span>
+      <div><h2 class="sentimiento-titulo">Inquieto</h2><p class="sentimiento-frase">Hay una intranquilidad que no puedes identificar claramente</p><span class="familia-etiqueta">Familia: Confusión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La inquietud difusa es más difícil de manejar que el miedo concreto porque no tiene objeto claro. Suele aparecer cuando acumulamos <span class="resaltado">muchas señales ambiguas</span> que el cerebro no ha podido procesar y organizar.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Externalización de la inquietud</span><ol class="tecnica-pasos"><li>Escribe: <span class="resaltado">"Me siento inquieto porque…"</span> — aunque no lo sepas con certeza.</li><li>Lee lo que escribiste: ¿Es un hecho real o una suposición?</li><li><span class="resaltado">¿Hay algo que pueda hacer, o solo necesito esperar y dar tiempo?</span></li></ol></div>
+      <p class="tecnica-nota">Poner palabras a una emoción vaga activa el córtex prefrontal y reduce la actividad de la amígdala.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"No toda inquietud tiene respuesta inmediata.<br>A veces solo se necesita tiempo."</p></div>
+
+  </section>
+
+  <!-- ── DESCOLOCADO ── -->
+  <section id="descolocado" class="sentimiento-seccion fam-confusion">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🙃</span>
+      <div><h2 class="sentimiento-titulo">Descolocado</h2><p class="sentimiento-frase">No sabes bien cómo encajar en este momento o lugar</p><span class="familia-etiqueta">Familia: Confusión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">Sentirse descolocado aparece en contextos nuevos o tras cambios de rol. Es transitorio — con cada interacción el cerebro <span class="resaltado">construye un nuevo mapa del entorno</span> social que lo rodea.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Busca un ancla familiar</span><ol class="tecnica-pasos"><li>Identifica <span class="resaltado">1 cosa o 1 persona</span> en este entorno que te genere alguna comodidad.</li><li>Permítete observar sin presión de actuar perfectamente desde el día uno.</li><li>Recuerda: <span class="resaltado">todos empezamos sin saber cómo encajar.</span></li></ol></div>
+      <p class="tecnica-nota">El sentido de pertenencia se construye con tiempo. No se puede acelerar, pero sí acompañar con amabilidad hacia uno mismo.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Estar descolocado no es estar perdido.<br>Es estar en el principio de algo nuevo."</p></div>
+
+  </section>
+
+</main>
+
 <footer class="pie">
   <div class="pie-grilla">
-
-    <div class="pie-marca">
-      <div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div>
-      <p>
-        Plataforma de bienestar emocional corporativo.<br>
-        Tus respuestas son anónimas y privadas.<br>
-        Nunca se comparten sin tu consentimiento.
-      </p>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Líneas de apoyo · Colombia</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 106</span><a href="tel:106">106</a> — Crisis emocional · Bogotá · 24h</div></li>
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 192 op. 4</span><a href="tel:192">192</a> — Salud mental · Nacional</div></li>
-        <li><span class="canal-icono">🚨</span><div><span class="resaltado">Emergencias 123</span><a href="tel:123">123</a> — Nacional · 24h</div></li>
-        <li><span class="canal-icono">💬</span><div><span class="resaltado">WhatsApp Línea 106</span><a href="https://wa.me/573007548933" target="_blank">300 754 8933</a></div></li>
-        <li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Contacto interno</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📧</span><div><span class="resaltado">Bienestar</span><a href="mailto:bienestar@empresa.com">bienestar@empresa.com</a></div></li>
-        <li><span class="canal-icono">👤</span><div><span class="resaltado">RRHH</span><a href="mailto:rrhh@empresa.com">rrhh@empresa.com</a></div></li>
-        <li><span class="canal-icono">🏥</span><div><span class="resaltado">Interno</span><a href="tel:3500">Ext. 3500</a> — Lun–Vie 7am–6pm</div></li>
-      </ul>
-    </div>
-
+    <div class="pie-marca"><div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div><p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p></div>
+    <div><p class="pie-columna-titulo">Líneas de apoyo</p><ul class="pie-canales"><li><span class="canal-icono">📞</span><div><a href="tel:106" class="resaltado">Línea 106</a> — Bogotá · 24h</div></li><li><span class="canal-icono">🚨</span><div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional</div></li><li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li></ul></div>
+    <div><p class="pie-columna-titulo">Contacto</p><ul class="pie-canales"><li><span class="canal-icono">📧</span><div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div></li></ul></div>
   </div>
-
-  <div class="pie-inferior">
-    <span> © 2026 SERENITY </span>
-  </div>
+  <div class="pie-inferior"><span>© 2026 SERENITY</span><span><a href="contacto.html" style="color:#AEB6BF; text-decoration:none;">Contacto y Apoyo</a></span></div>
 </footer>
 
-
 </body>
-
 </html>

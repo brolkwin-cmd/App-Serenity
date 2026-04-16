@@ -1,93 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERENITY</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SERENITY · Familia Inquietud: Ansioso, Inseguro, Vulnerable, Abrumado, Tenso." />
+  <title>SERENITY · Inquietud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-    
 <header class="encabezado">
   <nav class="nav-principal">
-    <a href="index.html" class="logo" aria-label="SERENITY - Inicio">
-      <span class="logo-simbolo">◈</span>
-      <span class="logo-nombre">Serenity</span>
-    </a>
-    <a href="contacto.html" class="boton-panico" aria-label="Contacto y apoyo de emergencia">
-      🆘 <span>Necesito ayuda ahora</span>
-    </a>
+    <a href="index.html" class="logo"><span class="logo-simbolo">◈</span><span class="logo-nombre">Serenity</span></a>
+    <a href="index.html" class="nav-enlace">← Inicio</a>
+    <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
+    <a href="contacto.html" class="boton-panico">🆘 <span>Necesito ayuda ahora</span></a>
   </nav>
   <div class="barra-registro">
-    <form action="index.html" method="get" aria-label="Registro de sesión">
-      <label class="etiqueta-registro" for="codigo">Registro de sesión:</label>
-      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" />
-      <select id="area" name="area" class="selector-area" aria-label="Área o departamento">
+    <form action="index.html" method="get">
+      <label class="etiqueta-registro" for="codigo">Sesión:</label>
+      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" autocomplete="off" maxlength="20" />
+      <select id="area" name="area" class="selector-area">
         <option value="">Área / Departamento</option>
-        <option value="ops">Operaciones</option>
-        <option value="com">Comercial</option>
-        <option value="fin">Finanzas</option>
-        <option value="rr">Recursos Humanos</option>
-        <option value="tec">Tecnología</option>
-        <option value="otro">Otra área</option>
+        <option value="ops">Operaciones</option><option value="com">Comercial</option>
+        <option value="fin">Finanzas</option><option value="rr">Recursos Humanos</option>
+        <option value="tec">Tecnología</option><option value="mkt">Marketing</option>
+        <option value="log">Logística</option><option value="otro">Otra área</option>
       </select>
-      <button type="submit" class="boton-registro">Iniciar sesión →</button>
+      <button type="submit" class="boton-registro">Iniciar →</button>
     </form>
   </div>
 </header>
 
+<div class="familia-hero inquietud">
+  <div class="familia-hero-contenido">
+    <div class="familia-hero-texto">
+      <h1 class="familia-hero-titulo">Inquietud</h1>
+      <p class="familia-hero-descripcion">Alta / baja energía · Desagradable · Tu sistema de alarma está activo</p>
+      <nav class="familia-navegacion" aria-label="Ir a sentimiento">
+        <a href="#ansioso"    class="pastilla-nav inquietud">😰 Ansioso</a>
+        <a href="#inseguro"   class="pastilla-nav inquietud">😨 Inseguro</a>
+        <a href="#vulnerable" class="pastilla-nav inquietud">🫥 Vulnerable</a>
+        <a href="#abrumado"   class="pastilla-nav inquietud">😵 Abrumado</a>
+        <a href="#tenso"      class="pastilla-nav inquietud">😬 Tenso</a>
+      </nav>
+    </div>
+    <img src="img/inquietud.png" alt="Ilustración inquietud" class="familia-imagen" />
+  </div>
+</div>
 
-    </header>
+<main class="familia-contenido">
 
-    <main> 
+  <!-- ── ANSIOSO ── -->
+  <section id="ansioso" class="sentimiento-seccion fam-inquietud">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😰</span>
+      <div><h2 class="sentimiento-titulo">Ansioso</h2><p class="sentimiento-frase">Tu mente anticipa problemas o situaciones negativas que podrían venir</p><span class="familia-etiqueta">Familia: Inquietud</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La ansiedad es el <span class="resaltado">sistema de alarma más antiguo del cerebro</span>. En el entorno laboral se activa ante amenazas sociales — el juicio ajeno, perder el trabajo — de la misma forma que ante un peligro físico real.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Grounding 5 – 4 – 3 – 2 – 1</span><ol class="tecnica-pasos"><li>Nombra <span class="resaltado">5 cosas</span> que puedes ver ahora mismo.</li><li>Toca <span class="resaltado">4 superficies</span> diferentes y descríbelas (fría, suave…).</li><li>Identifica <span class="resaltado">3 sonidos</span> que puedes escuchar.</li><li>Percibe <span class="resaltado">2 olores</span>. Nota <span class="resaltado">1 sabor</span>.</li></ol></div>
+      <p class="tecnica-nota">Este ejercicio activa el córtex prefrontal y desactiva la amígdala en 60–90 segundos.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La ansiedad no es señal de debilidad.<br>Es señal de que algo te importa."</p></div>
 
+  </section>
 
-    </main>
+  <!-- ── INSEGURO ── -->
+  <section id="inseguro" class="sentimiento-seccion fam-inquietud">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😨</span>
+      <div><h2 class="sentimiento-titulo">Inseguro</h2><p class="sentimiento-frase">Dudas sobre tu propia capacidad o si eres suficiente</p><span class="familia-etiqueta">Familia: Inquietud</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La inseguridad aparece cuando el <span class="resaltado">yo percibido</span> no alcanza el yo exigido. Muchas veces no es una evaluación real, sino una comparación distorsionada o un estándar imposible que interiorizaste.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Inventario de evidencia</span><ol class="tecnica-pasos"><li>Anota <span class="resaltado">3 logros concretos</span> de las últimas 2 semanas, por pequeños que sean.</li><li>Pregunta: <span class="resaltado">¿Qué diría alguien que me conoce bien sobre esto?</span></li><li>¿La inseguridad viene de datos reales o de suposiciones?</li></ol></div>
+      <p class="tecnica-nota">El cerebro ansioso sobrevalora amenazas y subestima recursos. La lista activa el sistema evaluativo más equilibrado.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Dudar no te hace incapaz.<br>Te hace alguien que piensa con cuidado."</p></div>
 
- 
+  </section>
+
+  <!-- ── VULNERABLE ── -->
+  <section id="vulnerable" class="sentimiento-seccion fam-inquietud">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🫥</span>
+      <div><h2 class="sentimiento-titulo">Vulnerable</h2><p class="sentimiento-frase">Te sientes expuesto o sin tu escudo habitual</p><span class="familia-etiqueta">Familia: Inquietud</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La vulnerabilidad no es debilidad — Brené Brown la define como <span class="resaltado">"el origen de la creatividad, la pertenencia y el amor"</span>. Aparece cuando te expones a algo genuino. Es incómoda porque importa.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Respiración diafragmática lenta</span><ol class="tecnica-pasos"><li>Pon una mano en el abdomen. Respira para que <span class="resaltado">solo el abdomen se mueva</span>.</li><li>Inhala 4 s. Exhala 6 s. Repite <span class="resaltado">5 veces</span>.</li><li>Pregunta: <span class="resaltado">¿Necesito apoyo de alguien ahora mismo?</span></li></ol></div>
+      <p class="tecnica-nota">Respirar desde el diafragma estimula el nervio vago, activando la respuesta de calma del sistema nervioso.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Estar vulnerable requiere valentía.<br>Protégete con cuidado, no con muros."</p></div>
+
+  </section>
+
+  <!-- ── ABRUMADO ── -->
+  <section id="abrumado" class="sentimiento-seccion fam-inquietud">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😵</span>
+      <div><h2 class="sentimiento-titulo">Abrumado</h2><p class="sentimiento-frase">La carga actual supera lo que sientes que puedes manejar</p><span class="familia-etiqueta">Familia: Inquietud</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">El agobio ocurre cuando la <span class="resaltado">demanda percibida supera los recursos disponibles</span>. La solución empieza por reducir el campo visual: una tarea, un paso a la vez.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">La técnica del "siguiente paso"</span><ol class="tecnica-pasos"><li>Para. Cierra mentalmente todas las tareas excepto <span class="resaltado">una</span>.</li><li>Pregunta: <span class="resaltado">¿Cuál es la única cosa más importante para los próximos 15 minutos?</span></li><li>Haz solo esa. La lista puede esperar.</li></ol></div>
+      <p class="tecnica-nota">El cerebro abrumado procesa mal la complejidad. Reducir el foco a una acción recupera la sensación de control.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"No tienes que resolver todo ahora.<br>Solo el siguiente paso."</p></div>
+
+  </section>
+
+  <!-- ── TENSO ── -->
+  <section id="tenso" class="sentimiento-seccion fam-inquietud">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😬</span>
+      <div><h2 class="sentimiento-titulo">Tenso</h2><p class="sentimiento-frase">Tu cuerpo y mente están en alerta permanente, rígidos</p><span class="familia-etiqueta">Familia: Inquietud</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La tensión corporal es la <span class="resaltado">expresión física del estrés psicológico</span>. El cuerpo guarda lo que la mente no ha procesado: mandíbula apretada, hombros elevados, respiración corta.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Relajación muscular progresiva (versión express)</span><ol class="tecnica-pasos"><li>Aprieta fuerte los hombros hacia las orejas durante <span class="resaltado">5 segundos</span>.</li><li>Suéltalos de golpe. Nota la diferencia entre tensión y relajación.</li><li>Repite con manos, mandíbula y pies, uno a uno.</li></ol></div>
+      <p class="tecnica-nota">Contraer y soltar los músculos enseña al sistema nervioso la diferencia entre tensión y calma.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Tu cuerpo ya sabe que algo pasa.<br>Escúchalo antes de que lo grite."</p></div>
+
+  </section>
+
+</main>
+
 <footer class="pie">
   <div class="pie-grilla">
-
-    <div class="pie-marca">
-      <div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div>
-      <p>
-        Plataforma de bienestar emocional corporativo.<br>
-        Tus respuestas son anónimas y privadas.<br>
-        Nunca se comparten sin tu consentimiento.
-      </p>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Líneas de apoyo · Colombia</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 106</span><a href="tel:106">106</a> — Crisis emocional · Bogotá · 24h</div></li>
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 192 op. 4</span><a href="tel:192">192</a> — Salud mental · Nacional</div></li>
-        <li><span class="canal-icono">🚨</span><div><span class="resaltado">Emergencias 123</span><a href="tel:123">123</a> — Nacional · 24h</div></li>
-        <li><span class="canal-icono">💬</span><div><span class="resaltado">WhatsApp Línea 106</span><a href="https://wa.me/573007548933" target="_blank">300 754 8933</a></div></li>
-        <li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Contacto interno</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📧</span><div><span class="resaltado">Bienestar</span><a href="mailto:bienestar@empresa.com">bienestar@empresa.com</a></div></li>
-        <li><span class="canal-icono">👤</span><div><span class="resaltado">RRHH</span><a href="mailto:rrhh@empresa.com">rrhh@empresa.com</a></div></li>
-        <li><span class="canal-icono">🏥</span><div><span class="resaltado">Interno</span><a href="tel:3500">Ext. 3500</a> — Lun–Vie 7am–6pm</div></li>
-      </ul>
-    </div>
-
+    <div class="pie-marca"><div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div><p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p></div>
+    <div><p class="pie-columna-titulo">Líneas de apoyo</p><ul class="pie-canales"><li><span class="canal-icono">📞</span><div><a href="tel:106" class="resaltado">Línea 106</a> — Bogotá · 24h</div></li><li><span class="canal-icono">🚨</span><div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional</div></li><li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li></ul></div>
+    <div><p class="pie-columna-titulo">Contacto</p><ul class="pie-canales"><li><span class="canal-icono">📧</span><div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div></li></ul></div>
   </div>
-
-  <div class="pie-inferior">
-    <span> © 2026 SERENITY </span>
-  </div>
+  <div class="pie-inferior"><span>© 2026 SERENITY — Bienestar Emocional Corporativo</span><span><a href="contacto.html" style="color:#AEB6BF; text-decoration:none;">Contacto y Apoyo</a></span></div>
 </footer>
 
 </body>
-
 </html>

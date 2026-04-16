@@ -1,93 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERENITY</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SERENITY · Familia Bienestar: Optimista, Orgulloso, Motivado, Agradecido, Tranquilo." />
+  <title>SERENITY · Bienestar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-    
 <header class="encabezado">
   <nav class="nav-principal">
-    <a href="index.html" class="logo" aria-label="SERENITY - Inicio">
-      <span class="logo-simbolo">◈</span>
-      <span class="logo-nombre">Serenity</span>
-    </a>
-    <a href="contacto.html" class="boton-panico" aria-label="Contacto y apoyo de emergencia">
-      🆘 <span>Necesito ayuda ahora</span>
-    </a>
+    <a href="index.html" class="logo"><span class="logo-simbolo">◈</span><span class="logo-nombre">Serenity</span></a>
+    <a href="index.html" class="nav-enlace">← Inicio</a>
+    <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
+    <a href="contacto.html" class="boton-panico">🆘 <span>Necesito ayuda ahora</span></a>
   </nav>
   <div class="barra-registro">
-    <form action="index.html" method="get" aria-label="Registro de sesión">
-      <label class="etiqueta-registro" for="codigo">Registro de sesión:</label>
-      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" />
-      <select id="area" name="area" class="selector-area" aria-label="Área o departamento">
+    <form action="index.html" method="get">
+      <label class="etiqueta-registro" for="codigo">Sesión:</label>
+      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" autocomplete="off" maxlength="20" />
+      <select id="area" name="area" class="selector-area">
         <option value="">Área / Departamento</option>
-        <option value="ops">Operaciones</option>
-        <option value="com">Comercial</option>
-        <option value="fin">Finanzas</option>
-        <option value="rr">Recursos Humanos</option>
-        <option value="tec">Tecnología</option>
-        <option value="otro">Otra área</option>
+        <option value="ops">Operaciones</option><option value="com">Comercial</option>
+        <option value="fin">Finanzas</option><option value="rr">Recursos Humanos</option>
+        <option value="tec">Tecnología</option><option value="mkt">Marketing</option>
+        <option value="log">Logística</option><option value="otro">Otra área</option>
       </select>
-      <button type="submit" class="boton-registro">Iniciar sesión →</button>
+      <button type="submit" class="boton-registro">Iniciar →</button>
     </form>
   </div>
 </header>
 
+<div class="familia-hero bienestar">
+  <div class="familia-hero-contenido"><div class="familia-hero-texto">
+    <h1 class="familia-hero-titulo">Bienestar</h1>
+    <p class="familia-hero-descripcion">Alta energía · Agradable · Estás en un espacio que vale la pena notar y cuidar</p>
+    <nav class="familia-navegacion" aria-label="Ir a sentimiento">
+      <a href="#optimista"  class="pastilla-nav bienestar">😊 Optimista</a>
+      <a href="#orgulloso"  class="pastilla-nav bienestar">🙂 Orgulloso</a>
+      <a href="#motivado"   class="pastilla-nav bienestar">🚀 Motivado</a>
+      <a href="#agradecido" class="pastilla-nav bienestar">🤗 Agradecido</a>
+      <a href="#tranquilo"  class="pastilla-nav bienestar">😌 Tranquilo</a>
+    </nav>
+  </div>
+</div>
 
-    </header>
+<main class="familia-contenido">
 
-    <main> 
+  <!-- ── OPTIMISTA ── -->
+  <section id="optimista" class="sentimiento-seccion fam-bienestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😊</span>
+      <div><h2 class="sentimiento-titulo">Optimista</h2><p class="sentimiento-frase">Confías en que lo que viene puede ser bueno o positivo</p><span class="familia-etiqueta">Familia: Bienestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">El optimismo es una orientación cognitiva hacia las posibilidades. Las experiencias positivas requieren <span class="resaltado">atención consciente</span> para consolidarse en memoria — el cerebro tiene sesgo negativo evolutivo. Cuando notas este estado, ancla cómo llegaste aquí.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Capitalización positiva (Gable et al., 2004)</span><ol class="tecnica-pasos"><li>Detente 30 s y <span class="resaltado">ponle nombre exacto</span> a lo que sientes.</li><li>¿Qué acción o decisión tuya contribuyó a este estado?</li><li>Comparte este estado con alguien — la felicidad compartida <span class="resaltado">se amplifica</span>.</li></ol></div>
+      <p class="tecnica-nota">Los estados positivos son el mejor momento para tomar decisiones importantes y abordar conversaciones difíciles.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Permítete estar bien.<br>No necesitas justificarlo."</p></div>
 
+  </section>
 
-    </main>
+  <!-- ── ORGULLOSO ── -->
+  <section id="orgulloso" class="sentimiento-seccion fam-bienestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🙂</span>
+      <div><h2 class="sentimiento-titulo">Orgulloso</h2><p class="sentimiento-frase">Reconoces un logro propio o ajeno con genuina satisfacción</p><span class="familia-etiqueta">Familia: Bienestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">El orgullo sano surge cuando <span class="resaltado">el esfuerzo produce un resultado reconocible</span>. Refuerza la identidad positiva y la motivación futura. El orgullo sano agradece el camino tanto como el resultado.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Registro de logro</span><ol class="tecnica-pasos"><li>Escribe exactamente qué lograste y <span class="resaltado">qué aportaste tú</span> para que ocurriera.</li><li>¿A quién puedes compartirlo? El orgullo compartido construye vínculos.</li><li>¿Cómo quiero que este momento informe lo que hago mañana?</li></ol></div>
+      <p class="tecnica-nota">El orgullo consciente refuerza la identidad de logro y aumenta la probabilidad de esfuerzo futuro.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"El orgullo bien situado<br>es el motor que impulsa lo siguiente."</p></div>
 
- 
+  </section>
+
+  <!-- ── MOTIVADO ── -->
+  <section id="motivado" class="sentimiento-seccion fam-bienestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🚀</span>
+      <div><h2 class="sentimiento-titulo">Motivado</h2><p class="sentimiento-frase">Tu energía está claramente dirigida hacia algo que te importa</p><span class="familia-etiqueta">Familia: Bienestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">Los estados de alta motivación son el <span class="resaltado">mejor momento para tomar decisiones importantes</span>. La Teoría Broaden-and-Build (Fredrickson) muestra que los estados positivos amplían el repertorio de acciones disponibles para el cerebro.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Capitaliza esta ventana de energía</span><ol class="tecnica-pasos"><li>¿Qué tarea importante has postergado? <span class="resaltado">Abórdala ahora.</span></li><li>Protege las próximas <span class="resaltado">90 minutos</span> de interrupciones si puedes.</li><li>Al terminar, anota qué condiciones crearon este estado para replicarlas.</li></ol></div>
+      <p class="tecnica-nota">La motivación es un recurso temporal. Usarla en tareas de mayor impacto maximiza su valor para ti.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La motivación no espera.<br>Úsala mientras está contigo."</p></div>
+
+  </section>
+
+  <!-- ── AGRADECIDO ── -->
+  <section id="agradecido" class="sentimiento-seccion fam-bienestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">🤗</span>
+      <div><h2 class="sentimiento-titulo">Agradecido</h2><p class="sentimiento-frase">Reconoces algo valioso que recibiste, esperado o no</p><span class="familia-etiqueta">Familia: Bienestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La gratitud tiene alto impacto en bienestar subjetivo. Activarla de forma consciente <span class="resaltado">reentrena el sistema de atención</span> para notar más de lo que funciona, no solo lo que falla.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Gratitud específica (no genérica)</span><ol class="tecnica-pasos"><li>Escribe <span class="resaltado">1 cosa concreta y específica</span> por la que estás agradecido hoy.</li><li>¿A quién o qué se lo debes exactamente?</li><li>¿Puedes expresarlo directamente? Un mensaje breve es suficiente.</li></ol></div>
+      <p class="tecnica-nota">La gratitud genérica tiene poco efecto medible. La específica tiene impacto real en bienestar.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La gratitud no ignora lo difícil.<br>Solo amplifica lo que también existe."</p></div>
+
+  </section>
+
+  <!-- ── TRANQUILO ── -->
+  <section id="tranquilo" class="sentimiento-seccion fam-bienestar">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😌</span>
+      <div><h2 class="sentimiento-titulo">Tranquilo</h2><p class="sentimiento-frase">Estás en calma, sin tensión interna ni urgencia</p><span class="familia-etiqueta">Familia: Bienestar</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La calma es un estado de <span class="resaltado">regulación óptima del sistema nervioso</span>: ni sobreactivación ni apatía. Es el estado ideal para reflexionar, tomar decisiones ponderadas y fortalecer vínculos. Merece ser protegido activamente.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Aprovecha esta claridad</span><ol class="tecnica-pasos"><li>Registra: <span class="resaltado">¿Qué condiciones me generaron este estado de calma?</span></li><li>¿Hay algo importante que quiera decidir o planear desde este lugar?</li><li>¿Puedo proteger este espacio unos minutos más, sin llenarlo de tareas?</li></ol></div>
+      <p class="tecnica-nota">La calma aumenta la calidad de las decisiones porque el prefrontal trabaja sin interferencia del sistema límbico activado.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La calma no es ausencia de vida.<br>Es vida en equilibrio."</p></div>
+
+  </section>
+
+</main>
+
 <footer class="pie">
   <div class="pie-grilla">
-
-    <div class="pie-marca">
-      <div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div>
-      <p>
-        Plataforma de bienestar emocional corporativo.<br>
-        Tus respuestas son anónimas y privadas.<br>
-        Nunca se comparten sin tu consentimiento.
-      </p>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Líneas de apoyo · Colombia</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 106</span><a href="tel:106">106</a> — Crisis emocional · Bogotá · 24h</div></li>
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 192 op. 4</span><a href="tel:192">192</a> — Salud mental · Nacional</div></li>
-        <li><span class="canal-icono">🚨</span><div><span class="resaltado">Emergencias 123</span><a href="tel:123">123</a> — Nacional · 24h</div></li>
-        <li><span class="canal-icono">💬</span><div><span class="resaltado">WhatsApp Línea 106</span><a href="https://wa.me/573007548933" target="_blank">300 754 8933</a></div></li>
-        <li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Contacto interno</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📧</span><div><span class="resaltado">Bienestar</span><a href="mailto:bienestar@empresa.com">bienestar@empresa.com</a></div></li>
-        <li><span class="canal-icono">👤</span><div><span class="resaltado">RRHH</span><a href="mailto:rrhh@empresa.com">rrhh@empresa.com</a></div></li>
-        <li><span class="canal-icono">🏥</span><div><span class="resaltado">Interno</span><a href="tel:3500">Ext. 3500</a> — Lun–Vie 7am–6pm</div></li>
-      </ul>
-    </div>
-
+    <div class="pie-marca"><div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div><p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p></div>
+    <div><p class="pie-columna-titulo">Líneas de apoyo</p><ul class="pie-canales"><li><span class="canal-icono">📞</span><div><a href="tel:106" class="resaltado">Línea 106</a> — Bogotá · 24h</div></li><li><span class="canal-icono">🚨</span><div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional</div></li><li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li></ul></div>
+    <div><p class="pie-columna-titulo">Contacto</p><ul class="pie-canales"><li><span class="canal-icono">📧</span><div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div></li></ul></div>
   </div>
-
-  <div class="pie-inferior">
-    <span> © 2026 SERENITY </span>
-  </div>
+  <div class="pie-inferior"><span>© 2026 SERENITY</span><span><a href="contacto.html" style="color:#AEB6BF; text-decoration:none;">Contacto y Apoyo</a></span></div>
 </footer>
 
 </body>
-
 </html>

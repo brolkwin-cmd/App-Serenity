@@ -1,106 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERENITY</title>
-    <link rel="stylesheet" href="/styles.css">
-
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SERENITY · Familia Tensión: Frustrado, Irritable, Resentido, Herido, Hostil." />
+  <title>SERENITY · Tensión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-    
 <header class="encabezado">
   <nav class="nav-principal">
-    <a href="index.html" class="logo" aria-label="SERENITY - Inicio">
-      <span class="logo-simbolo">◈</span>
-      <span class="logo-nombre">Serenity</span>
-    </a>
-    <a href="contacto.html" class="boton-panico" aria-label="Contacto y apoyo de emergencia">
-      🆘 <span>Necesito ayuda ahora</span>
-    </a>
+    <a href="index.html" class="logo"><span class="logo-simbolo">◈</span><span class="logo-nombre">Serenity</span></a>
+    <a href="index.html" class="nav-enlace">← Inicio</a>
+    <a href="herramientas.html" class="nav-enlace">🧰 Herramientas</a>
+    <a href="contacto.html" class="boton-panico">🆘 <span>Necesito ayuda ahora</span></a>
   </nav>
   <div class="barra-registro">
-    <form action="index.html" method="get" aria-label="Registro de sesión">
-      <label class="etiqueta-registro" for="codigo">Registro de sesión:</label>
-      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" />
-      <select id="area" name="area" class="selector-area" aria-label="Área o departamento">
+    <form action="index.html" method="get">
+      <label class="etiqueta-registro" for="codigo">Sesión:</label>
+      <input type="text" id="codigo" name="codigo" class="campo-registro" placeholder="Código de colaborador" autocomplete="off" maxlength="20" />
+      <select id="area" name="area" class="selector-area">
         <option value="">Área / Departamento</option>
-        <option value="ops">Operaciones</option>
-        <option value="com">Comercial</option>
-        <option value="fin">Finanzas</option>
-        <option value="rr">Recursos Humanos</option>
-        <option value="tec">Tecnología</option>
-        <option value="otro">Otra área</option>
+        <option value="ops">Operaciones</option><option value="com">Comercial</option>
+        <option value="fin">Finanzas</option><option value="rr">Recursos Humanos</option>
+        <option value="tec">Tecnología</option><option value="mkt">Marketing</option>
+        <option value="log">Logística</option><option value="otro">Otra área</option>
       </select>
-      <button type="submit" class="boton-registro">Iniciar sesión →</button>
+      <button type="submit" class="boton-registro">Iniciar →</button>
     </form>
   </div>
 </header>
 
-
-    </header>
-
-    <main> 
-<div class="contenedor">
-    <h1 class="titulo-principal">¿Qué estás sintiendo ahora?</h1>
-    <p class="subtitulo">
-      Elige el sentimiento que mejor describe tu estado.
-      Pasa el cursor para ver una descripción, y haz clic para acceder a las herramientas de afrontamiento.
-    </p>
-
-    <div class="tip-semanal">
-      <img src="img/tip.png" alt="Reflexión semanal" class="tip-imagen" />
-      <div>
-        <p class="tip-label">💡 Reflexión de la semana</p>
-        <p class="tip-texto">"Reconocer cómo te sientes es el primer paso para cuidarte. Dedica 5 minutos hoy a identificar una emoción y nombrarla. Nombrar es la mitad del camino."</p>
-      </div>
+<div class="familia-hero tension">
+  <div class="familia-hero-contenido">
+    <div class="familia-hero-texto">
+      <h1 class="familia-hero-titulo">Tensión</h1>
+      <p class="familia-hero-descripcion">Alta energía · Desagradable · Estás activado/a pero de forma incómoda</p>
+      <nav class="familia-navegacion" aria-label="Ir a sentimiento">
+        <a href="#frustrado"  class="pastilla-nav tension">😤 Frustrado</a>
+        <a href="#irritable"  class="pastilla-nav tension">😒 Irritable</a>
+        <a href="#resentido"  class="pastilla-nav tension">😠 Resentido</a>
+        <a href="#herido"     class="pastilla-nav tension">💔 Herido</a>
+        <a href="#hostil"     class="pastilla-nav tension">😡 Hostil</a>
+      </nav>
     </div>
+    <img src="img/tension.png" alt="Ilustración tensión" class="familia-imagen" />
+  </div>
+</div>
 
-    </main>
+<main class="familia-contenido">
+
+  <!-- ── FRUSTRADO ── -->
+  <section id="frustrado" class="sentimiento-seccion fam-tension">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😤</span>
+      <div><h2 class="sentimiento-titulo">Frustrado</h2><p class="sentimiento-frase">Algo importante fue bloqueado o no salió como esperabas</p><span class="familia-etiqueta">Familia: Tensión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La frustración aparece cuando un <span class="resaltado">esfuerzo no obtiene el resultado esperado</span>. Es una señal de que algo te importa: un objetivo, un estándar o una relación. Tu energía está activa — la clave es canalizarla antes de que escale.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Respiración reguladora 4 – 4 – 6</span><ol class="tecnica-pasos"><li>Inhala lentamente contando hasta <span class="resaltado">4</span>.</li><li>Sostén el aire contando hasta <span class="resaltado">4</span>.</li><li>Exhala muy despacio contando hasta <span class="resaltado">6</span>.</li><li>Repite <span class="resaltado">4 veces</span> antes de responder o actuar.</li></ol></div>
+      <p class="tecnica-nota">La exhalación más larga activa el nervio vago y reduce el cortisol, permitiéndote responder en lugar de reaccionar.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La frustración no es fracaso.<br>Es el precio de tener estándares."</p></div>
+
+  </section>
+
+  <!-- ── IRRITABLE ── -->
+  <section id="irritable" class="sentimiento-seccion fam-tension">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😒</span>
+      <div><h2 class="sentimiento-titulo">Irritable</h2><p class="sentimiento-frase">Tu tolerancia está baja y reaccionas más de lo habitual</p><span class="familia-etiqueta">Familia: Tensión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La irritabilidad suele ser una señal de <span class="resaltado">acumulación</span>: demasiado estrés, falta de sueño o necesidades no atendidas durante mucho tiempo. No reacciones a la última gota — busca la fuente real.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Pausa reparadora de 3 minutos</span><ol class="tecnica-pasos"><li>Aléjate del estímulo por al menos <span class="resaltado">3 minutos</span>.</li><li>Toma agua fría o algo de comer si llevas más de 2 horas sin hacerlo.</li><li>Pregúntate: <span class="resaltado">¿Qué necesito ahora mismo que no estoy dándome?</span></li></ol></div>
+      <p class="tecnica-nota">A veces la irritabilidad tiene una causa física (hambre, sed, sueño). Atenderla primero cambia el estado rápidamente.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Estar irritable no te hace difícil.<br>Te hace alguien que necesita cuidado."</p></div>
+
+  </section>
+
+  <!-- ── RESENTIDO ── -->
+  <section id="resentido" class="sentimiento-seccion fam-tension">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😠</span>
+      <div><h2 class="sentimiento-titulo">Resentido</h2><p class="sentimiento-frase">Guardas una injusticia que no pudiste expresar a tiempo</p><span class="familia-etiqueta">Familia: Tensión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">El resentimiento es <span class="resaltado">ira acumulada</span> sin canal de expresión. Señala un límite que fue cruzado o una expectativa incumplida que nunca se comunicó. Mantenerlo consume energía cognitiva cada día.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Carta de aclaración (sin enviar)</span><ol class="tecnica-pasos"><li>Escribe exactamente lo que ocurrió, sin filtros, durante <span class="resaltado">5 minutos</span>.</li><li>Identifica: <span class="resaltado">¿Qué límite o valor fue afectado?</span></li><li>Decide: <span class="resaltado">¿Hay una conversación pendiente que debo tener?</span></li></ol></div>
+      <p class="tecnica-nota">La escritura externaliza la carga sin necesidad de confrontar directamente. Puedes decidir después si compartirla o no.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"El resentimiento no castiga al otro.<br>Te pesa a ti. Mereces soltarlo."</p></div>
+
+  </section>
+
+  <!-- ── HERIDO ── -->
+  <section id="herido" class="sentimiento-seccion fam-tension">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">💔</span>
+      <div><h2 class="sentimiento-titulo">Herido</h2><p class="sentimiento-frase">Algo tocó un lugar sensible dentro de ti</p><span class="familia-etiqueta">Familia: Tensión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">Sentirse herido requiere <span class="resaltado">haber estado abierto</span> al otro: importa porque algo o alguien importaba. No es debilidad — es señal de que tus vínculos tienen valor real para ti.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Auto-compasión activa (Kristin Neff)</span><ol class="tecnica-pasos"><li>Pon una mano sobre tu pecho. Nota el calor.</li><li>Dite: <span class="resaltado">"Es normal sentir dolor. Muchas personas en mi lugar sentirían lo mismo."</span></li><li>Pregunta: <span class="resaltado">¿Qué necesito ahora de mí mismo?</span></li></ol></div>
+      <p class="tecnica-nota">La auto-compasión es el mismo cuidado que darías a un amigo, dirigido hacia ti.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"Estar herido no significa estar roto.<br>Significa que eres humano."</p></div>
+
+  </section>
+
+  <!-- ── HOSTIL ── -->
+  <section id="hostil" class="sentimiento-seccion fam-tension">
+    <div class="panel-encabezado">
+      <span class="panel-emoji">😡</span>
+      <div><h2 class="sentimiento-titulo">Hostil</h2><p class="sentimiento-frase">Sientes el entorno como amenazante y te pones en guardia</p><span class="familia-etiqueta">Familia: Tensión</span></div>
+    </div>
+    <div class="tarjeta"><span class="tarjeta-titulo">¿Por qué siento esto?</span><p class="tarjeta-texto">La hostilidad es una respuesta de <span class="resaltado">protección activa</span>: el sistema nervioso interpreta el entorno como peligroso y activa una postura defensiva. Suele aparecer después de estrés sostenido sin alivio.</p></div>
+    <div class="tarjeta">
+      <span class="tarjeta-titulo">Qué puedes hacer ahora</span>
+      <div class="tecnica-caja"><span class="tecnica-nombre">Perspectiva del observador</span><ol class="tecnica-pasos"><li>Imagina que ves la situación desde afuera, como si le ocurriera a otra persona.</li><li>Pregunta: <span class="resaltado">¿Qué le diría yo a esa persona?</span></li><li>¿Puedes alejarte del espacio por <span class="resaltado">5 minutos</span> antes de responder?</li></ol></div>
+      <p class="tecnica-nota">Este ejercicio activa el córtex prefrontal y reduce la reactividad de la amígdala.</p>
+    </div>
+    <div class="tarjeta"><p class="mensaje-normalizador">"La hostilidad es tu armadura.<br>Debajo siempre hay algo que proteger."</p></div>
+
+  </section>
+
+</main>
 
 <footer class="pie">
   <div class="pie-grilla">
-
-    <div class="pie-marca">
-      <div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div>
-      <p>
-        Plataforma de bienestar emocional corporativo.<br>
-        Tus respuestas son anónimas y privadas.<br>
-        Nunca se comparten sin tu consentimiento.
-      </p>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Líneas de apoyo · Colombia</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 106</span><a href="tel:106">106</a> — Crisis emocional · Bogotá · 24h</div></li>
-        <li><span class="canal-icono">📞</span><div><span class="resaltado">Línea 192 op. 4</span><a href="tel:192">192</a> — Salud mental · Nacional</div></li>
-        <li><span class="canal-icono">🚨</span><div><span class="resaltado">Emergencias 123</span><a href="tel:123">123</a> — Nacional · 24h</div></li>
-        <li><span class="canal-icono">💬</span><div><span class="resaltado">WhatsApp Línea 106</span><a href="https://wa.me/573007548933" target="_blank">300 754 8933</a></div></li>
-        <li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="pie-columna-titulo">Contacto interno</p>
-      <ul class="pie-canales">
-        <li><span class="canal-icono">📧</span><div><span class="resaltado">Bienestar</span><a href="mailto:bienestar@empresa.com">bienestar@empresa.com</a></div></li>
-        <li><span class="canal-icono">👤</span><div><span class="resaltado">RRHH</span><a href="mailto:rrhh@empresa.com">rrhh@empresa.com</a></div></li>
-        <li><span class="canal-icono">🏥</span><div><span class="resaltado">Interno</span><a href="tel:3500">Ext. 3500</a> — Lun–Vie 7am–6pm</div></li>
-      </ul>
-    </div>
-
+    <div class="pie-marca"><div><span class="pie-logo-simbolo">◈</span><span class="pie-logo-texto">Serenity</span></div><p>Plataforma de bienestar emocional corporativo.<br>Tus respuestas son anónimas y privadas.</p></div>
+    <div><p class="pie-columna-titulo">Líneas de apoyo</p><ul class="pie-canales"><li><span class="canal-icono">📞</span><div><a href="tel:106" class="resaltado">Línea 106</a> — Bogotá · 24h</div></li><li><span class="canal-icono">🚨</span><div><a href="tel:123" class="resaltado">Emergencias 123</a> — Nacional</div></li><li><span class="canal-icono">→</span><div><a href="contacto.html">Ver todas las líneas</a></div></li></ul></div>
+    <div><p class="pie-columna-titulo">Contacto</p><ul class="pie-canales"><li><span class="canal-icono">📧</span><div><a href="mailto:bienestar@empresa.com" class="resaltado">bienestar@empresa.com</a></div></li></ul></div>
   </div>
-
-  <div class="pie-inferior">
-    <span>© 2026 SERENITY</span>
-  </div>
+  <div class="pie-inferior"><span>© 2026 SERENITY — Bienestar Emocional Corporativo</span><span><a href="contacto.html" style="color:#AEB6BF; text-decoration:none;">Contacto y Apoyo</a></span></div>
 </footer>
 
-
 </body>
-
 </html>
